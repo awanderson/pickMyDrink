@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3C3A0438-828E-441B-A08E-446967F5CB80</string>
+	<key>IDESourceControlProjectName</key>
+	<string>pickMyDrink</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9BD1BD23-DA1F-42F2-833E-A72036934F84</key>
+		<string>https://github.com/awanderson/pickMyDrink.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>pickMyDrink/pickMyDrink.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9BD1BD23-DA1F-42F2-833E-A72036934F84</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/awanderson/pickMyDrink.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9BD1BD23-DA1F-42F2-833E-A72036934F84</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9BD1BD23-DA1F-42F2-833E-A72036934F84</string>
+			<key>IDESourceControlWCCName</key>
+			<string>pickMyDrink</string>
+		</dict>
+	</array>
+</dict>
+</plist>
