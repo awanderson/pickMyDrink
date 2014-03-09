@@ -6,6 +6,9 @@
 //  Copyright (c) 2014 Philip Deisinger. All rights reserved.
 //
 
+//COMMENT
+//Another comment test
+
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
