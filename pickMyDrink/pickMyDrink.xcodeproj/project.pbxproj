@@ -21,6 +21,7 @@
 		D4361CDB18CCE59900D77151 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4361CBD18CCE59900D77151 /* UIKit.framework */; };
 		D4361CE318CCE59900D77151 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4361CE118CCE59900D77151 /* InfoPlist.strings */; };
 		D4361CE518CCE59900D77151 /* pickMyDrinkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4361CE418CCE59900D77151 /* pickMyDrinkTests.m */; };
+		D4361CF018CCEE4A00D77151 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = D4361CEF18CCEE4A00D77151 /* Data.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		D4361CE018CCE59900D77151 /* pickMyDrinkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "pickMyDrinkTests-Info.plist"; sourceTree = "<group>"; };
 		D4361CE218CCE59900D77151 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D4361CE418CCE59900D77151 /* pickMyDrinkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pickMyDrinkTests.m; sourceTree = "<group>"; };
+		D4361CEE18CCEE4900D77151 /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
+		D4361CEF18CCEE4A00D77151 /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Data.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +119,8 @@
 				D4361CC918CCE59900D77151 /* AppDelegate.m */,
 				D4361CCB18CCE59900D77151 /* Main.storyboard */,
 				D4361CCE18CCE59900D77151 /* ViewController.h */,
+				D4361CEE18CCEE4900D77151 /* Data.h */,
+				D4361CEF18CCEE4A00D77151 /* Data.m */,
 				D4361CCF18CCE59900D77151 /* ViewController.m */,
 				D4361CD118CCE59900D77151 /* Images.xcassets */,
 				D4361CC018CCE59900D77151 /* Supporting Files */,
@@ -252,6 +257,7 @@
 				D4361CD018CCE59900D77151 /* ViewController.m in Sources */,
 				D4361CCA18CCE59900D77151 /* AppDelegate.m in Sources */,
 				D4361CC618CCE59900D77151 /* main.m in Sources */,
+				D4361CF018CCEE4A00D77151 /* Data.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
