@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="12F45" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Alcohols" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Drinks" representedClassName="Drinks" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pointValue" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="alcohols" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Alcohols" syncable="YES"/>
+        <relationship name="mixers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Mixers" syncable="YES"/>
+    </entity>
+    <entity name="Mixers" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Drinks" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Alcohols" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Mixers" positionX="0" positionY="0" width="0" height="0"/>
+    </elements>
+</model>

@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
+#import "DrinkCell.h"
 
 @interface ListViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UITableView *tableDrinks;
+
+@property (weak, nonatomic) NSArray *drinkArr;
 
 @end

@@ -12,6 +12,10 @@
 		704CC78E18CCF6240071C0AF /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 704CC78D18CCF6240071C0AF /* ListViewController.m */; };
 		704CC79118CCF62C0071C0AF /* ChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 704CC79018CCF62C0071C0AF /* ChallengeViewController.m */; };
 		704CC79418CCF6420071C0AF /* RouletteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 704CC79318CCF6420071C0AF /* RouletteViewController.m */; };
+		7080EF3318EB4B150099FAD7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7080EF3218EB4B150099FAD7 /* CoreData.framework */; };
+		7080EF3618EB4E050099FAD7 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7080EF3418EB4E050099FAD7 /* Model.xcdatamodeld */; };
+		7080EF3918EB4F340099FAD7 /* Drinks.m in Sources */ = {isa = PBXBuildFile; fileRef = 7080EF3818EB4F340099FAD7 /* Drinks.m */; };
+		7080EF3C18EB51D70099FAD7 /* DrinkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7080EF3B18EB51D70099FAD7 /* DrinkCell.m */; };
 		D4361CBA18CCE59900D77151 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4361CB918CCE59900D77151 /* Foundation.framework */; };
 		D4361CBC18CCE59900D77151 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4361CBB18CCE59900D77151 /* CoreGraphics.framework */; };
 		D4361CBE18CCE59900D77151 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4361CBD18CCE59900D77151 /* UIKit.framework */; };
@@ -50,6 +54,12 @@
 		704CC79018CCF62C0071C0AF /* ChallengeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChallengeViewController.m; sourceTree = "<group>"; };
 		704CC79218CCF6420071C0AF /* RouletteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouletteViewController.h; sourceTree = "<group>"; };
 		704CC79318CCF6420071C0AF /* RouletteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouletteViewController.m; sourceTree = "<group>"; };
+		7080EF3218EB4B150099FAD7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7080EF3518EB4E050099FAD7 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		7080EF3718EB4F340099FAD7 /* Drinks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drinks.h; sourceTree = "<group>"; };
+		7080EF3818EB4F340099FAD7 /* Drinks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Drinks.m; sourceTree = "<group>"; };
+		7080EF3A18EB51D70099FAD7 /* DrinkCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrinkCell.h; sourceTree = "<group>"; };
+		7080EF3B18EB51D70099FAD7 /* DrinkCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrinkCell.m; sourceTree = "<group>"; };
 		D4361CB618CCE59900D77151 /* pickMyDrink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pickMyDrink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4361CB918CCE59900D77151 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D4361CBB18CCE59900D77151 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -78,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7080EF3318EB4B150099FAD7 /* CoreData.framework in Frameworks */,
 				D4361CBC18CCE59900D77151 /* CoreGraphics.framework in Frameworks */,
 				D4361CBE18CCE59900D77151 /* UIKit.framework in Frameworks */,
 				D4361CBA18CCE59900D77151 /* Foundation.framework in Frameworks */,
@@ -119,6 +130,7 @@
 		D4361CB818CCE59900D77151 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7080EF3218EB4B150099FAD7 /* CoreData.framework */,
 				D4361CB918CCE59900D77151 /* Foundation.framework */,
 				D4361CBB18CCE59900D77151 /* CoreGraphics.framework */,
 				D4361CBD18CCE59900D77151 /* UIKit.framework */,
@@ -132,7 +144,12 @@
 			children = (
 				D4361CC818CCE59900D77151 /* AppDelegate.h */,
 				D4361CC918CCE59900D77151 /* AppDelegate.m */,
+				7080EF3418EB4E050099FAD7 /* Model.xcdatamodeld */,
+				7080EF3718EB4F340099FAD7 /* Drinks.h */,
+				7080EF3818EB4F340099FAD7 /* Drinks.m */,
 				D4361CCB18CCE59900D77151 /* Main.storyboard */,
+				7080EF3A18EB51D70099FAD7 /* DrinkCell.h */,
+				7080EF3B18EB51D70099FAD7 /* DrinkCell.m */,
 				D4361CCE18CCE59900D77151 /* ViewController.h */,
 				D4361CEE18CCEE4900D77151 /* Data.h */,
 				D4361CEF18CCEE4A00D77151 /* Data.m */,
@@ -286,7 +303,10 @@
 				D4361CCA18CCE59900D77151 /* AppDelegate.m in Sources */,
 				D4361CC618CCE59900D77151 /* main.m in Sources */,
 				704CC78818CCF6010071C0AF /* MainViewController.m in Sources */,
+				7080EF3618EB4E050099FAD7 /* Model.xcdatamodeld in Sources */,
+				7080EF3918EB4F340099FAD7 /* Drinks.m in Sources */,
 				704CC79118CCF62C0071C0AF /* ChallengeViewController.m in Sources */,
+				7080EF3C18EB51D70099FAD7 /* DrinkCell.m in Sources */,
 				D4361CF018CCEE4A00D77151 /* Data.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,6 +528,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7080EF3418EB4E050099FAD7 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7080EF3518EB4E050099FAD7 /* Model.xcdatamodel */,
+			);
+			currentVersion = 7080EF3518EB4E050099FAD7 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D4361CAE18CCE59800D77151 /* Project object */;
 }
