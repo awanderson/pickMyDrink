@@ -16,15 +16,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
     
-    //Add some objects to our db
-    NSManagedObjectContext *context = [self managedObjectContext];
-    NSManagedObject *drinks = [NSEntityDescription insertNewObjectForEntityForName:@"Drinks" inManagedObjectContext:context];
-    [drinks setValue:@"Test Drink" forKey:@"name"];
-    NSError *error;
-    if (![context save:&error]) {
-        NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
+    //load database only once, then save in settings
+    if (![[NSUserDefaults standardUserDefaults] boolForKey:@"loadDB"]) {
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"loadDB"];
+        [self loadInitialData];
+    
     }
     
     return YES;
@@ -151,6 +148,56 @@
 {
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
+    
+    
+    
+    
+- (void)loadInitialData
+{
+    
+    [self loadDrinks];
+    
+    /*
+    //Add some objects to our db
+    NSManagedObjectContext *context = [self managedObjectContext];
+    NSManagedObject *drinks = [NSEntityDescription insertNewObjectForEntityForName:@"Drinks" inManagedObjectContext:context];
+    [drinks setValue:@"Test Drink" forKey:@"name"];
+    NSError *error;
+    if (![context save:&error]) {
+        NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
+    }
+     */
+}
+    
+- (void)loadDrinks
+{
+    
+    NSError* err = nil;
+    NSString* dataPath = [[NSBundle mainBundle] pathForResource:@"Drinks" ofType:@"json"];
+    NSArray* drinks = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:dataPath]
+                                                     options:kNilOptions
+                                                       error:&err];
+    
+    NSLog(@"Imported Drinks%@", drinks);
+    
+    for(NSDictionary *jsonDrink in drinks) {
+        NSManagedObjectContext *context = [self managedObjectContext];
+        NSManagedObject *drinks = [NSEntityDescription insertNewObjectForEntityForName:@"Drinks" inManagedObjectContext:context];
+        
+        [drinks setValue:[jsonDrink objectForKey:@"name"] forKey:@"name"];
+        [drinks setValue:[jsonDrink objectForKey:@"pointValue"] forKey:@"pointValue"];
+        NSError *error;
+        if (![context save:&error]) {
+            NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
+        }
+    }
+    
+        
+}
+- (void)loadChasers
+{
 
+
+}
 
 @end

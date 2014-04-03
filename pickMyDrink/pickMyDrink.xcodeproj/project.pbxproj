@@ -16,6 +16,7 @@
 		7080EF3618EB4E050099FAD7 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7080EF3418EB4E050099FAD7 /* Model.xcdatamodeld */; };
 		7080EF3918EB4F340099FAD7 /* Drinks.m in Sources */ = {isa = PBXBuildFile; fileRef = 7080EF3818EB4F340099FAD7 /* Drinks.m */; };
 		7080EF3C18EB51D70099FAD7 /* DrinkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7080EF3B18EB51D70099FAD7 /* DrinkCell.m */; };
+		70F7176918EDE8FD0033B64F /* Drinks.json in Resources */ = {isa = PBXBuildFile; fileRef = 70F7176818EDE8FD0033B64F /* Drinks.json */; };
 		D4361CBA18CCE59900D77151 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4361CB918CCE59900D77151 /* Foundation.framework */; };
 		D4361CBC18CCE59900D77151 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4361CBB18CCE59900D77151 /* CoreGraphics.framework */; };
 		D4361CBE18CCE59900D77151 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4361CBD18CCE59900D77151 /* UIKit.framework */; };
@@ -60,6 +61,7 @@
 		7080EF3818EB4F340099FAD7 /* Drinks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Drinks.m; sourceTree = "<group>"; };
 		7080EF3A18EB51D70099FAD7 /* DrinkCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrinkCell.h; sourceTree = "<group>"; };
 		7080EF3B18EB51D70099FAD7 /* DrinkCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrinkCell.m; sourceTree = "<group>"; };
+		70F7176818EDE8FD0033B64F /* Drinks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Drinks.json; sourceTree = "<group>"; };
 		D4361CB618CCE59900D77151 /* pickMyDrink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pickMyDrink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4361CB918CCE59900D77151 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D4361CBB18CCE59900D77151 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -111,6 +113,7 @@
 		D4361CAD18CCE59800D77151 = {
 			isa = PBXGroup;
 			children = (
+				70F7176818EDE8FD0033B64F /* Drinks.json */,
 				D4361CBF18CCE59900D77151 /* pickMyDrink */,
 				D4361CDE18CCE59900D77151 /* pickMyDrinkTests */,
 				D4361CB818CCE59900D77151 /* Frameworks */,
@@ -277,6 +280,7 @@
 			files = (
 				D4361CD218CCE59900D77151 /* Images.xcassets in Resources */,
 				D4361CC418CCE59900D77151 /* InfoPlist.strings in Resources */,
+				70F7176918EDE8FD0033B64F /* Drinks.json in Resources */,
 				D4361CCD18CCE59900D77151 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,4 @@
+ [{ "name": "White Russian", "pointValue": 8 },
+  { "name": "Black Russian", "pointValue" : 7 },
+  { "name": "Coke & Rum", "pointValue": 10 },
+  { "name": "ScrewDriver", "pointValue": 7 } ]
