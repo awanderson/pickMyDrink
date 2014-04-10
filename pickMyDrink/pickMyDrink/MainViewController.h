@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "QuestionManager.h"
 
 @interface MainViewController : UIViewController
 
-
+    @property (nonatomic, retain) QuestionManager *manager;
 //These are all the buttons to switch pages
 
 @end

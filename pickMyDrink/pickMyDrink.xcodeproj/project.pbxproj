@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		701C7D2118F7295E001DC940 /* Questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 701C7D2018F7295E001DC940 /* Questions.json */; };
+		701C7D2718F72AE1001DC940 /* Questions.m in Sources */ = {isa = PBXBuildFile; fileRef = 701C7D2618F72AE1001DC940 /* Questions.m */; };
+		701C7D2A18F72D2B001DC940 /* QuestionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 701C7D2918F72D2B001DC940 /* QuestionManager.m */; };
+		701C7D3018F73496001DC940 /* NSMutableArray+Shuffling.m in Sources */ = {isa = PBXBuildFile; fileRef = 701C7D2F18F73496001DC940 /* NSMutableArray+Shuffling.m */; };
 		704CC78818CCF6010071C0AF /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 704CC78718CCF6010071C0AF /* MainViewController.m */; };
 		704CC78B18CCF61B0071C0AF /* QuestionaireViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 704CC78A18CCF61B0071C0AF /* QuestionaireViewController.m */; };
 		704CC78E18CCF6240071C0AF /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 704CC78D18CCF6240071C0AF /* ListViewController.m */; };
@@ -45,6 +49,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		701C7D2018F7295E001DC940 /* Questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Questions.json; sourceTree = "<group>"; };
+		701C7D2518F72AE1001DC940 /* Questions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Questions.h; path = ../Questions.h; sourceTree = "<group>"; };
+		701C7D2618F72AE1001DC940 /* Questions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Questions.m; path = ../Questions.m; sourceTree = "<group>"; };
+		701C7D2818F72D2B001DC940 /* QuestionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionManager.h; sourceTree = "<group>"; };
+		701C7D2918F72D2B001DC940 /* QuestionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionManager.m; sourceTree = "<group>"; };
+		701C7D2E18F73496001DC940 /* NSMutableArray+Shuffling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+Shuffling.h"; path = "../NSMutableArray+Shuffling.h"; sourceTree = "<group>"; };
+		701C7D2F18F73496001DC940 /* NSMutableArray+Shuffling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+Shuffling.m"; path = "../NSMutableArray+Shuffling.m"; sourceTree = "<group>"; };
 		704CC78618CCF6010071C0AF /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		704CC78718CCF6010071C0AF /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		704CC78918CCF61B0071C0AF /* QuestionaireViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionaireViewController.h; sourceTree = "<group>"; };
@@ -113,6 +124,7 @@
 		D4361CAD18CCE59800D77151 = {
 			isa = PBXGroup;
 			children = (
+				701C7D2018F7295E001DC940 /* Questions.json */,
 				70F7176818EDE8FD0033B64F /* Drinks.json */,
 				D4361CBF18CCE59900D77151 /* pickMyDrink */,
 				D4361CDE18CCE59900D77151 /* pickMyDrinkTests */,
@@ -145,6 +157,10 @@
 		D4361CBF18CCE59900D77151 /* pickMyDrink */ = {
 			isa = PBXGroup;
 			children = (
+				701C7D2E18F73496001DC940 /* NSMutableArray+Shuffling.h */,
+				701C7D2F18F73496001DC940 /* NSMutableArray+Shuffling.m */,
+				701C7D2518F72AE1001DC940 /* Questions.h */,
+				701C7D2618F72AE1001DC940 /* Questions.m */,
 				D4361CC818CCE59900D77151 /* AppDelegate.h */,
 				D4361CC918CCE59900D77151 /* AppDelegate.m */,
 				7080EF3418EB4E050099FAD7 /* Model.xcdatamodeld */,
@@ -169,6 +185,8 @@
 				704CC79018CCF62C0071C0AF /* ChallengeViewController.m */,
 				704CC79218CCF6420071C0AF /* RouletteViewController.h */,
 				704CC79318CCF6420071C0AF /* RouletteViewController.m */,
+				701C7D2818F72D2B001DC940 /* QuestionManager.h */,
+				701C7D2918F72D2B001DC940 /* QuestionManager.m */,
 			);
 			path = pickMyDrink;
 			sourceTree = "<group>";
@@ -278,6 +296,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				701C7D2118F7295E001DC940 /* Questions.json in Resources */,
 				D4361CD218CCE59900D77151 /* Images.xcassets in Resources */,
 				D4361CC418CCE59900D77151 /* InfoPlist.strings in Resources */,
 				70F7176918EDE8FD0033B64F /* Drinks.json in Resources */,
@@ -300,14 +319,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				701C7D2718F72AE1001DC940 /* Questions.m in Sources */,
 				D4361CD018CCE59900D77151 /* ViewController.m in Sources */,
 				704CC78B18CCF61B0071C0AF /* QuestionaireViewController.m in Sources */,
+				701C7D3018F73496001DC940 /* NSMutableArray+Shuffling.m in Sources */,
 				704CC78E18CCF6240071C0AF /* ListViewController.m in Sources */,
 				704CC79418CCF6420071C0AF /* RouletteViewController.m in Sources */,
 				D4361CCA18CCE59900D77151 /* AppDelegate.m in Sources */,
 				D4361CC618CCE59900D77151 /* main.m in Sources */,
 				704CC78818CCF6010071C0AF /* MainViewController.m in Sources */,
 				7080EF3618EB4E050099FAD7 /* Model.xcdatamodeld in Sources */,
+				701C7D2A18F72D2B001DC940 /* QuestionManager.m in Sources */,
 				7080EF3918EB4F340099FAD7 /* Drinks.m in Sources */,
 				704CC79118CCF62C0071C0AF /* ChallengeViewController.m in Sources */,
 				7080EF3C18EB51D70099FAD7 /* DrinkCell.m in Sources */,

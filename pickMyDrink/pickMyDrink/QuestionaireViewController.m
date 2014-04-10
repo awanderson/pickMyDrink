@@ -26,6 +26,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    manager = [QuestionManager questionManager];
+    Questions *question = [manager generateQuestion];
+    [self.question setText:question.question];
 	// Do any additional setup after loading the view.
 }
 
@@ -35,4 +38,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)choiceOneClick:(id)sender {
+}
+    
+- (IBAction)choiceTwoClick:(id)sender {
+}
+    
+- (IBAction)choiceThreeClick:(id)sender {
+}
+    
+- (IBAction)choiceFourClick:(id)sender {
+}
 @end

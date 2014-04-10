@@ -93,7 +93,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWA-jZ-dow">
-                                <rect key="frame" x="38" y="112" width="69" height="21"/>
+                                <rect key="frame" x="36" y="111" width="262" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -105,6 +105,9 @@
                                 <state key="normal" title="Choice 1">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="choiceOneClick:" destination="O62-AA-T6Q" eventType="touchUpInside" id="QST-wf-36t"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6on-pO-DjI">
                                 <rect key="frame" x="137" y="257" width="61" height="30"/>
@@ -112,6 +115,9 @@
                                 <state key="normal" title="Choice 2">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="choiceTwoClick:" destination="O62-AA-T6Q" eventType="touchUpInside" id="oL0-qY-P8f"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sj8-xx-MOy">
                                 <rect key="frame" x="137" y="302" width="61" height="30"/>
@@ -119,6 +125,9 @@
                                 <state key="normal" title="Choice 3">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="choiceThreeClick:" destination="O62-AA-T6Q" eventType="touchUpInside" id="Obv-K2-6Qj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0FU-2y-47j">
                                 <rect key="frame" x="137" y="340" width="61" height="30"/>
@@ -126,6 +135,9 @@
                                 <state key="normal" title="Choice 4">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="choiceFourClick:" destination="O62-AA-T6Q" eventType="touchUpInside" id="c60-Rv-T6E"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEz-Z1-MKG">
                                 <rect key="frame" x="137" y="518" width="41" height="30"/>
@@ -138,6 +150,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="U6s-76-c1M"/>
+                    <connections>
+                        <outlet property="choiceFour" destination="0FU-2y-47j" id="VgP-ay-DCU"/>
+                        <outlet property="choiceOne" destination="0Ut-Ff-9j4" id="6DJ-Tr-qk4"/>
+                        <outlet property="choiceThree" destination="sj8-xx-MOy" id="HOx-4j-ryo"/>
+                        <outlet property="choiceTwo" destination="6on-pO-DjI" id="8js-Og-VnE"/>
+                        <outlet property="choiceTwoClick" destination="6on-pO-DjI" id="FY4-6S-mSs"/>
+                        <outlet property="question" destination="EWA-jZ-dow" id="MT7-vb-oT7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uhL-lP-J1r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
