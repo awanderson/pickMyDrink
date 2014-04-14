@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70176C1F18FC7F3800B03ED0 /* Questions.m in Sources */ = {isa = PBXBuildFile; fileRef = 70176C1E18FC7F3800B03ED0 /* Questions.m */; };
 		701C7D2118F7295E001DC940 /* Questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 701C7D2018F7295E001DC940 /* Questions.json */; };
-		701C7D2718F72AE1001DC940 /* Questions.m in Sources */ = {isa = PBXBuildFile; fileRef = 701C7D2618F72AE1001DC940 /* Questions.m */; };
 		701C7D2A18F72D2B001DC940 /* QuestionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 701C7D2918F72D2B001DC940 /* QuestionManager.m */; };
 		701C7D3018F73496001DC940 /* NSMutableArray+Shuffling.m in Sources */ = {isa = PBXBuildFile; fileRef = 701C7D2F18F73496001DC940 /* NSMutableArray+Shuffling.m */; };
 		704CC78818CCF6010071C0AF /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 704CC78718CCF6010071C0AF /* MainViewController.m */; };
@@ -49,9 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		70176C1D18FC7F3800B03ED0 /* Questions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Questions.h; sourceTree = "<group>"; };
+		70176C1E18FC7F3800B03ED0 /* Questions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Questions.m; sourceTree = "<group>"; };
 		701C7D2018F7295E001DC940 /* Questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Questions.json; sourceTree = "<group>"; };
-		701C7D2518F72AE1001DC940 /* Questions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Questions.h; path = ../Questions.h; sourceTree = "<group>"; };
-		701C7D2618F72AE1001DC940 /* Questions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Questions.m; path = ../Questions.m; sourceTree = "<group>"; };
 		701C7D2818F72D2B001DC940 /* QuestionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionManager.h; sourceTree = "<group>"; };
 		701C7D2918F72D2B001DC940 /* QuestionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionManager.m; sourceTree = "<group>"; };
 		701C7D2E18F73496001DC940 /* NSMutableArray+Shuffling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+Shuffling.h"; path = "../NSMutableArray+Shuffling.h"; sourceTree = "<group>"; };
@@ -159,11 +159,11 @@
 			children = (
 				701C7D2E18F73496001DC940 /* NSMutableArray+Shuffling.h */,
 				701C7D2F18F73496001DC940 /* NSMutableArray+Shuffling.m */,
-				701C7D2518F72AE1001DC940 /* Questions.h */,
-				701C7D2618F72AE1001DC940 /* Questions.m */,
 				D4361CC818CCE59900D77151 /* AppDelegate.h */,
 				D4361CC918CCE59900D77151 /* AppDelegate.m */,
 				7080EF3418EB4E050099FAD7 /* Model.xcdatamodeld */,
+				70176C1D18FC7F3800B03ED0 /* Questions.h */,
+				70176C1E18FC7F3800B03ED0 /* Questions.m */,
 				7080EF3718EB4F340099FAD7 /* Drinks.h */,
 				7080EF3818EB4F340099FAD7 /* Drinks.m */,
 				D4361CCB18CCE59900D77151 /* Main.storyboard */,
@@ -319,7 +319,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				701C7D2718F72AE1001DC940 /* Questions.m in Sources */,
 				D4361CD018CCE59900D77151 /* ViewController.m in Sources */,
 				704CC78B18CCF61B0071C0AF /* QuestionaireViewController.m in Sources */,
 				701C7D3018F73496001DC940 /* NSMutableArray+Shuffling.m in Sources */,
@@ -327,6 +326,7 @@
 				704CC79418CCF6420071C0AF /* RouletteViewController.m in Sources */,
 				D4361CCA18CCE59900D77151 /* AppDelegate.m in Sources */,
 				D4361CC618CCE59900D77151 /* main.m in Sources */,
+				70176C1F18FC7F3800B03ED0 /* Questions.m in Sources */,
 				704CC78818CCF6010071C0AF /* MainViewController.m in Sources */,
 				7080EF3618EB4E050099FAD7 /* Model.xcdatamodeld in Sources */,
 				701C7D2A18F72D2B001DC940 /* QuestionManager.m in Sources */,

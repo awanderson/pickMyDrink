@@ -58,12 +58,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "pickMyDrink/QuestionaireViewController.m"
-            timestampString = "418856152.860592"
+            timestampString = "419201096.148549"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "-viewDidLoad"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "-changeQuestion:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

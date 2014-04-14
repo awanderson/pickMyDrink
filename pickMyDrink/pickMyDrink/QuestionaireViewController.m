@@ -27,9 +27,7 @@
 {
     [super viewDidLoad];
     manager = [QuestionManager questionManager];
-    Questions *question = [manager generateQuestion];
-    [self.question setText:question.question];
-	// Do any additional setup after loading the view.
+    [self changeQuestion:0];
 }
 
 - (void)didReceiveMemoryWarning
@@ -38,15 +36,37 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)choiceOneClick:(id)sender {
+
+- (IBAction)choiceOneButton:(id)sender {
+    NSInteger pointValue = [currentQuestion.answerOnePointValue integerValue];
+    [self changeQuestion:pointValue];
 }
-    
-- (IBAction)choiceTwoClick:(id)sender {
+
+- (IBAction)choiceTwoButton:(id)sender {
+    NSInteger pointValue = [currentQuestion.answerTwoPointValue integerValue];
+    [self changeQuestion:pointValue];
 }
-    
-- (IBAction)choiceThreeClick:(id)sender {
+
+- (IBAction)choiceThreeButton:(id)sender {
+    NSInteger pointValue = [currentQuestion.answerThreePointValue integerValue];
+    [self changeQuestion:pointValue];
 }
-    
-- (IBAction)choiceFourClick:(id)sender {
+
+- (IBAction)choiceFourButton:(id)sender {
+    NSInteger pointValue = [currentQuestion.answerFourPointValue integerValue];
+    [self changeQuestion:pointValue];
+}
+
+
+
+- (void) changeQuestion:(NSInteger)pointValue
+{
+    [manager addPoints:pointValue];
+    currentQuestion = [manager generateQuestion];
+    [questionText setText:currentQuestion.question];
+    [choiceOneText setTitle:currentQuestion.answerOne forState:UIControlStateNormal];
+    [choiceTwoText setTitle:currentQuestion.answerTwo forState:UIControlStateNormal];
+    [choiceThreeText setTitle:currentQuestion.answerThree forState:UIControlStateNormal];
+    [choiceFourText setTitle:currentQuestion.answerFour forState:UIControlStateNormal];
 }
 @end

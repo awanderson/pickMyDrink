@@ -9,17 +9,20 @@
 #import <UIKit/UIKit.h>
 #import "QuestionManager.h"
 #import "Questions.h"
+
 @interface QuestionaireViewController : UIViewController {
     QuestionManager *manager;
+    Questions *currentQuestion;
+    __weak IBOutlet UILabel *questionText;
+    __weak IBOutlet UIButton *choiceOneText;
+    __weak IBOutlet UIButton *choiceTwoText;
+    __weak IBOutlet UIButton *choiceThreeText;
+    __weak IBOutlet UIButton *choiceFourText;
 }
-    @property (weak, nonatomic) IBOutlet UIButton *choiceOne;
-    @property (weak, nonatomic) IBOutlet UIButton *choiceTwo;
-    @property (weak, nonatomic) IBOutlet UIButton *choiceThree;
-    @property (weak, nonatomic) IBOutlet UIButton *choiceFour;
-    @property (weak, nonatomic) IBOutlet UILabel *question;
-- (IBAction)choiceOneClick:(id)sender;
-- (IBAction)choiceTwoClick:(id)sender;
-- (IBAction)choiceThreeClick:(id)sender;
-- (IBAction)choiceFourClick:(id)sender;
-    
+
+- (IBAction)choiceOneButton:(id)sender;
+- (IBAction)choiceTwoButton:(id)sender;
+- (IBAction)choiceThreeButton:(id)sender;
+- (IBAction)choiceFourButton:(id)sender;
+
 @end

@@ -10,10 +10,6 @@
 
 @implementation QuestionManager
 
-    
-    
-    
-    
     - (Drinks *) generateDrink {
         return [self.questions objectAtIndex:1];
     }
