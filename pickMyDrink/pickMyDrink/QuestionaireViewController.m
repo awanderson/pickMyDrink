@@ -25,8 +25,10 @@
 
 - (void)viewDidLoad
 {
+    questionNumber=0;
     [super viewDidLoad];
     manager = [QuestionManager questionManager];
+    [manager resetQuestionManager];
     [self changeQuestion:0];
 }
 
@@ -61,12 +63,21 @@
 
 - (void) changeQuestion:(NSInteger)pointValue
 {
-    [manager addPoints:pointValue];
-    currentQuestion = [manager generateQuestion];
-    [questionText setText:currentQuestion.question];
-    [choiceOneText setTitle:currentQuestion.answerOne forState:UIControlStateNormal];
-    [choiceTwoText setTitle:currentQuestion.answerTwo forState:UIControlStateNormal];
-    [choiceThreeText setTitle:currentQuestion.answerThree forState:UIControlStateNormal];
-    [choiceFourText setTitle:currentQuestion.answerFour forState:UIControlStateNormal];
+    if(questionNumber == 3) {
+        UIStoryboard *storyboard = [self storyboard];
+        RouletteViewController *rvc = [storyboard instantiateViewControllerWithIdentifier:@"RouletteViewController"];
+        [self presentViewController:rvc animated:YES completion:nil];
+        
+    } else {
+        [manager addPoints:pointValue];
+        currentQuestion = [manager generateQuestion];
+        [questionText setText:currentQuestion.question];
+        [choiceOneText setTitle:currentQuestion.answerOne forState:UIControlStateNormal];
+        [choiceTwoText setTitle:currentQuestion.answerTwo forState:UIControlStateNormal];
+        [choiceThreeText setTitle:currentQuestion.answerThree forState:UIControlStateNormal];
+        [choiceFourText setTitle:currentQuestion.answerFour forState:UIControlStateNormal];
+        questionNumber = questionNumber + 1;
+    }
+    
 }
 @end

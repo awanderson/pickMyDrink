@@ -26,6 +26,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    manager = [QuestionManager questionManager];
+    [self displayDrink:[manager generateDrink]];
 	// Do any additional setup after loading the view.
 }
 
@@ -33,6 +35,10 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)displayDrink:(Drinks*)drink {
+    [self.drinkLabel setText:drink.name];
 }
 
 @end

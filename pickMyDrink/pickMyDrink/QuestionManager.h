@@ -15,16 +15,18 @@
 @interface QuestionManager : NSObject {
     
     NSMutableArray *filteredDrinks;
-    NSInteger *pointValue;
+    NSMutableArray *filteredQuestions;
     
 }
+    @property (nonatomic) int pointValue;
     @property (nonatomic, retain) NSMutableArray *questions;
     @property (nonatomic, retain) NSMutableArray *drinks;
-    @property (nonatomic, retain) NSNumber * questionCount;
-    
+        
     - (Drinks *) generateDrink;
     - (Questions *) generateQuestion;
     - (void) addPoints:(NSInteger)points;
     + (id)questionManager;
-    
+    - (void) resetQuestionManager;
+    - (int) getPoints;
+
 @end

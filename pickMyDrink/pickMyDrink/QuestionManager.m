@@ -11,7 +11,7 @@
 @implementation QuestionManager
 
     - (Drinks *) generateDrink {
-        return [self.questions objectAtIndex:1];
+        return [self.drinks objectAtIndex:1];
     }
     
     
@@ -23,9 +23,9 @@
     
     - (Questions *) generateQuestion {
         
-        int r = arc4random() % self.questions.count;
-        Questions *q = [self.questions objectAtIndex:r];
-        [self.questions removeObjectAtIndex:r];
+        int r = arc4random() % filteredQuestions.count;
+        Questions *q = [filteredQuestions objectAtIndex:r];
+        [filteredQuestions removeObjectAtIndex:r];
         return q;
     }
     
@@ -58,7 +58,7 @@
             
             //returns an array on success
             manager.drinks = [[context executeFetchRequest:fetchRequest error:&error] mutableCopy];
-            
+            NSLog(@"count of arr rando = %lu", (unsigned long)manager.drinks.count);
             
             
             fetchRequest = [[NSFetchRequest alloc] init];
@@ -67,9 +67,7 @@
             
             //returns an array on success
             manager.questions = [[context executeFetchRequest:fetchRequest error:&error] mutableCopy];
-            
-            
-            
+            manager.pointValue = 0;
         });
         
         return manager;
@@ -80,7 +78,17 @@
      */
     
     - (void)addPoints:(NSInteger) points {
-        pointValue = pointValue + points;
+        self.pointValue = self.pointValue + points;
+    }
+
+    - (int) getPoints {
+        return self.pointValue;
+    }
+
+    - (void) resetQuestionManager {
+        filteredDrinks = self.drinks;
+        filteredQuestions = self.questions;
+        self.pointValue = 0;
     }
     
 @end

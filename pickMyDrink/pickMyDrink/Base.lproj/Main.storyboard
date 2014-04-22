@@ -139,13 +139,6 @@
                                     <action selector="choiceFourButton:" destination="O62-AA-T6Q" eventType="touchUpInside" id="OOx-gs-RFZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEz-Z1-MKG">
-                                <rect key="frame" x="137" y="518" width="41" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Finish">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -239,7 +232,7 @@
         <!--Roulette View Controller-->
         <scene sceneID="KAp-I8-mgT">
             <objects>
-                <viewController id="Tby-kF-T9T" customClass="RouletteViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RouletteViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Tby-kF-T9T" customClass="RouletteViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MrC-5L-BIe"/>
                         <viewControllerLayoutGuide type="bottom" id="PoR-h1-78n"/>
@@ -247,9 +240,21 @@
                     <view key="view" contentMode="scaleToFill" id="bzc-Dw-Jj5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Drink" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8C-mO-sUB">
+                                <rect key="frame" x="20" y="273" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="qSC-HG-GmK"/>
+                    <connections>
+                        <outlet property="drinkLabel" destination="f8C-mO-sUB" id="bvV-ad-jgJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a98-ow-bgM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
