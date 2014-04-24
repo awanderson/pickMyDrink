@@ -22,7 +22,7 @@
         <!--Main View Controller-->
         <scene sceneID="IAM-pS-Ezg">
             <objects>
-                <viewController id="GEu-u1-YOM" customClass="MainViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GEu-u1-YOM" customClass="MainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="woM-Jy-d65"/>
                         <viewControllerLayoutGuide type="bottom" id="Wkd-9v-Niv"/>
@@ -83,7 +83,7 @@
         <!--Questionaire View Controller-->
         <scene sceneID="m8Z-PW-Jpx">
             <objects>
-                <viewController id="O62-AA-T6Q" customClass="QuestionaireViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QuestionaireViewController" id="O62-AA-T6Q" customClass="QuestionaireViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6Ya-7v-nEt"/>
                         <viewControllerLayoutGuide type="bottom" id="1rI-wA-Ohb"/>
@@ -248,6 +248,36 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1tJ-bt-KsO">
+                                <rect key="frame" x="20" y="518" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="No Thanks!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="respin:" destination="Tby-kF-T9T" eventType="touchUpInside" id="0Z8-90-Dlx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OiK-js-QZz">
+                                <rect key="frame" x="137" y="518" width="70" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Start Over">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetQuestions:" destination="Tby-kF-T9T" eventType="touchUpInside" id="UGl-ar-OUr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eD2-4A-RTh">
+                                <rect key="frame" x="259" y="518" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="home:" destination="Tby-kF-T9T" eventType="touchUpInside" id="vbX-zv-5xz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>

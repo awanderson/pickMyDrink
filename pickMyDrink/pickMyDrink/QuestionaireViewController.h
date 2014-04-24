@@ -22,8 +22,6 @@
     __weak IBOutlet UIButton *choiceFourText;
 }
 
-@property(strong, nonatomic)RouletteViewController *rouletteViewController;
-
 - (IBAction)choiceOneButton:(id)sender;
 - (IBAction)choiceTwoButton:(id)sender;
 - (IBAction)choiceThreeButton:(id)sender;

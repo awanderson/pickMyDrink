@@ -63,13 +63,13 @@
 
 - (void) changeQuestion:(NSInteger)pointValue
 {
+    [manager addPoints:pointValue];
     if(questionNumber == 3) {
         UIStoryboard *storyboard = [self storyboard];
         RouletteViewController *rvc = [storyboard instantiateViewControllerWithIdentifier:@"RouletteViewController"];
         [self presentViewController:rvc animated:YES completion:nil];
         
     } else {
-        [manager addPoints:pointValue];
         currentQuestion = [manager generateQuestion];
         [questionText setText:currentQuestion.question];
         [choiceOneText setTitle:currentQuestion.answerOne forState:UIControlStateNormal];

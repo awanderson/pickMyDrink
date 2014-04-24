@@ -11,9 +11,48 @@
 @implementation QuestionManager
 
     - (Drinks *) generateDrink {
-        return [self.drinks objectAtIndex:1];
+        
+        
+        
+        //random drink if our point value is zero
+        if (self.pointValue == 0) {
+            // if we run out of filtered drinks, simply put all the drinks back in filtered drink
+            if(filteredDrinks.count == 0) {
+                filteredDrinks = self.drinks;
+            }
+            
+        }
+        else
+        {
+            //if these are the same, we haven't filtered yet
+            if(filteredDrinks.count == self.drinks.count) {
+                [filteredDrinks removeAllObjects];
+                for(int i = 0; i < self.drinks.count; i++) {
+                    Drinks *drink = [self.drinks objectAtIndex:i];
+                    int drinkPointValue = [drink.pointValue integerValue];
+                    if(drinkPointValue == self.pointValue) {
+                        [filteredDrinks addObject:drink];
+                    }
+                }
+            } else if (filteredDrinks.count == 0) {
+                //add all drinks minus the ones with the right point value because
+                //the user has already had all of those
+                for(int i = 0; i < self.drinks.count; i++) {
+                    Drinks *drink = [self.drinks objectAtIndex:i];
+                    int drinkPointValue = (int)drink.pointValue;
+                    if(drinkPointValue != self.pointValue) {
+                        [filteredDrinks addObject:drink];
+                    }
+                }
+            }
+            
+        }
+        int r = arc4random() % filteredDrinks.count;
+        Drinks *drink = [filteredDrinks objectAtIndex:r];
+        [filteredDrinks removeObjectAtIndex:r];
+        return drink;
     }
-    
+
     
     
     /**
@@ -85,9 +124,14 @@
         return self.pointValue;
     }
 
+    /*
+     * Resets the question manager to default settings, putting all the drinks and questions
+     * into the filtered drinks and questions and reseting the point value, should be 
+     * called when a new line of questions is asked, or random drink generated
+     */
     - (void) resetQuestionManager {
-        filteredDrinks = self.drinks;
-        filteredQuestions = self.questions;
+        filteredDrinks = [self.drinks mutableCopy];
+        filteredQuestions = [self.questions mutableCopy];
         self.pointValue = 0;
     }
     
