@@ -7,7 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "QuestionManager.h"
+#import "Questions.h"
+#import "RouletteViewController.h"
 
-@interface QuestionaireViewController : UIViewController
+@interface QuestionaireViewController : UIViewController {
+    NSInteger questionNumber;
+    QuestionManager *manager;
+    Questions *currentQuestion;
+    __weak IBOutlet UILabel *questionText;
+    __weak IBOutlet UIButton *choiceOneText;
+    __weak IBOutlet UIButton *choiceTwoText;
+    __weak IBOutlet UIButton *choiceThreeText;
+    __weak IBOutlet UIButton *choiceFourText;
+}
+
+- (IBAction)choiceOneButton:(id)sender;
+- (IBAction)choiceTwoButton:(id)sender;
+- (IBAction)choiceThreeButton:(id)sender;
+- (IBAction)choiceFourButton:(id)sender;
 
 @end

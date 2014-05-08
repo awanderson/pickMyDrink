@@ -7,7 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Questions.h"
+#import "Drinks.h"
+#import "QuestionManager.h"
+#import "QuestionaireViewController.h"
+#import "MainViewController.h"
 
-@interface RouletteViewController : UIViewController
+@interface RouletteViewController : UIViewController {
+    QuestionManager *manager;
+}
+
+@property (weak, nonatomic) IBOutlet UILabel *drinkLabel;
+
+@property(nonatomic) NSInteger pointValue;
+- (IBAction)respin:(id)sender;
+- (IBAction)resetQuestions:(id)sender;
+- (IBAction)home:(id)sender;
 
 @end

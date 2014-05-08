@@ -12,9 +12,21 @@
     <entity name="Mixers" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
+    <entity name="Questions" representedClassName="Questions" syncable="YES">
+        <attribute name="answerFour" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="answerFourPointValue" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="answerOne" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="answerOnePointValue" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="answerThree" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="answerThreePointValue" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="answerTwo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="answerTwoPointValue" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="question" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <elements>
-        <element name="Drinks" positionX="0" positionY="0" width="0" height="0"/>
         <element name="Alcohols" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Drinks" positionX="0" positionY="0" width="0" height="0"/>
         <element name="Mixers" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Questions" positionX="0" positionY="0" width="0" height="0"/>
     </elements>
 </model>

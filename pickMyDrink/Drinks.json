@@ -1,0 +1,10 @@
+ [{ "name": "Light Beer", "pointValue": 3 },
+  { "name": "White Wine", "pointValue": 4 },
+  { "name": "Red Wine", "pointValue": 5 },
+  { "name": "Beer", "pointValue": 6 },
+  { "name": "White Russian", "pointValue": 7 },
+  { "name": "Black Russian", "pointValue" : 8 },
+  { "name": "Coke & Rum", "pointValue":  9 },
+  { "name": "ScrewDriver", "pointValue": 10 },
+  { "name": "Manhattan", "pointValue": 11},
+  { "name": "Vodka on the rocks", "pointValue": 12}]

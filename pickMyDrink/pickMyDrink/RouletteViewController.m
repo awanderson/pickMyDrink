@@ -26,6 +26,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    manager = [QuestionManager questionManager];
+    [self displayDrink:[manager generateDrink]];
 	// Do any additional setup after loading the view.
 }
 
@@ -35,4 +37,24 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)displayDrink:(Drinks*)drink {
+    [self.drinkLabel setText:drink.name];
+}
+
+- (IBAction)respin:(id)sender {
+    [self displayDrink:[manager generateDrink]];
+}
+
+- (IBAction)resetQuestions:(id)sender {
+    UIStoryboard *storyboard = [self storyboard];
+    QuestionaireViewController *qvc = [storyboard instantiateViewControllerWithIdentifier:@"QuestionaireViewController"];
+    [self presentViewController:qvc animated:YES completion:Nil];
+}
+
+- (IBAction)home:(id)sender {
+    UIStoryboard *storyboard = [self storyboard];
+    MainViewController *mvc = [storyboard instantiateViewControllerWithIdentifier:@"MainViewController"];
+    [self presentViewController:mvc animated:YES completion:nil
+     ];
+}
 @end
