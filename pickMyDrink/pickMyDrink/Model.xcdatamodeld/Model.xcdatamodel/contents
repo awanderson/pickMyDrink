@@ -4,6 +4,8 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="Drinks" representedClassName="Drinks" syncable="YES">
+        <attribute name="directions" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ingredients" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="pointValue" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <relationship name="alcohols" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Alcohols" syncable="YES"/>

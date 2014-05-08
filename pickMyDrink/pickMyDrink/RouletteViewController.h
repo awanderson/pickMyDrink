@@ -15,13 +15,12 @@
 
 @interface RouletteViewController : UIViewController {
     QuestionManager *manager;
+    __weak IBOutlet UIButton *drinkName;
 }
 
-@property (weak, nonatomic) IBOutlet UILabel *drinkLabel;
 
 @property(nonatomic) NSInteger pointValue;
 - (IBAction)respin:(id)sender;
-- (IBAction)resetQuestions:(id)sender;
 - (IBAction)home:(id)sender;
 
 @end

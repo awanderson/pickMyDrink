@@ -16,6 +16,7 @@
     
     NSMutableArray *filteredDrinks;
     NSMutableArray *filteredQuestions;
+    Drinks *currentDrink;
     
 }
     @property (nonatomic) int pointValue;
@@ -28,5 +29,6 @@
     + (id)questionManager;
     - (void) resetQuestionManager;
     - (int) getPoints;
+    - (Drinks *) getCurrentDrink;
 
 @end

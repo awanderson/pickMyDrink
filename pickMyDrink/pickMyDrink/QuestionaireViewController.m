@@ -65,9 +65,12 @@
 {
     [manager addPoints:pointValue];
     if(questionNumber == 3) {
+
         UIStoryboard *storyboard = [self storyboard];
+        //UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
         RouletteViewController *rvc = [storyboard instantiateViewControllerWithIdentifier:@"RouletteViewController"];
-        [self presentViewController:rvc animated:YES completion:nil];
+        //[self.navigationController presentViewController:rvc animated:YES completion:nil];
+        [self.navigationController pushViewController:rvc animated:YES];
         
     } else {
         currentQuestion = [manager generateQuestion];

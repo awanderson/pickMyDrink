@@ -50,6 +50,7 @@
         int r = arc4random() % filteredDrinks.count;
         Drinks *drink = [filteredDrinks objectAtIndex:r];
         [filteredDrinks removeObjectAtIndex:r];
+        currentDrink = drink;
         return drink;
     }
 
@@ -133,6 +134,14 @@
         filteredDrinks = [self.drinks mutableCopy];
         filteredQuestions = [self.questions mutableCopy];
         self.pointValue = 0;
+        currentDrink = nil;
+    }
+
+    /*
+     * sends the current drink that was selected by generateDrink last
+     */
+- (Drinks *)getCurrentDrink {
+        return currentDrink;
     }
     
 @end

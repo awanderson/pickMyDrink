@@ -20,6 +20,7 @@
 		7080EF3618EB4E050099FAD7 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7080EF3418EB4E050099FAD7 /* Model.xcdatamodeld */; };
 		7080EF3918EB4F340099FAD7 /* Drinks.m in Sources */ = {isa = PBXBuildFile; fileRef = 7080EF3818EB4F340099FAD7 /* Drinks.m */; };
 		7080EF3C18EB51D70099FAD7 /* DrinkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7080EF3B18EB51D70099FAD7 /* DrinkCell.m */; };
+		70F129C0191C373100423666 /* DrinkDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F129BF191C373100423666 /* DrinkDetailViewController.m */; };
 		70F7176918EDE8FD0033B64F /* Drinks.json in Resources */ = {isa = PBXBuildFile; fileRef = 70F7176818EDE8FD0033B64F /* Drinks.json */; };
 		D4361CBA18CCE59900D77151 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4361CB918CCE59900D77151 /* Foundation.framework */; };
 		D4361CBC18CCE59900D77151 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4361CBB18CCE59900D77151 /* CoreGraphics.framework */; };
@@ -72,6 +73,8 @@
 		7080EF3818EB4F340099FAD7 /* Drinks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Drinks.m; sourceTree = "<group>"; };
 		7080EF3A18EB51D70099FAD7 /* DrinkCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrinkCell.h; sourceTree = "<group>"; };
 		7080EF3B18EB51D70099FAD7 /* DrinkCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrinkCell.m; sourceTree = "<group>"; };
+		70F129BE191C373100423666 /* DrinkDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrinkDetailViewController.h; sourceTree = "<group>"; };
+		70F129BF191C373100423666 /* DrinkDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrinkDetailViewController.m; sourceTree = "<group>"; };
 		70F7176818EDE8FD0033B64F /* Drinks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Drinks.json; sourceTree = "<group>"; };
 		D4361CB618CCE59900D77151 /* pickMyDrink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pickMyDrink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4361CB918CCE59900D77151 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -182,6 +185,8 @@
 				704CC78C18CCF6240071C0AF /* ListViewController.h */,
 				704CC78D18CCF6240071C0AF /* ListViewController.m */,
 				704CC78F18CCF62C0071C0AF /* ChallengeViewController.h */,
+				70F129BE191C373100423666 /* DrinkDetailViewController.h */,
+				70F129BF191C373100423666 /* DrinkDetailViewController.m */,
 				704CC79018CCF62C0071C0AF /* ChallengeViewController.m */,
 				704CC79218CCF6420071C0AF /* RouletteViewController.h */,
 				704CC79318CCF6420071C0AF /* RouletteViewController.m */,
@@ -319,6 +324,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70F129C0191C373100423666 /* DrinkDetailViewController.m in Sources */,
 				D4361CD018CCE59900D77151 /* ViewController.m in Sources */,
 				704CC78B18CCF61B0071C0AF /* QuestionaireViewController.m in Sources */,
 				701C7D3018F73496001DC940 /* NSMutableArray+Shuffling.m in Sources */,

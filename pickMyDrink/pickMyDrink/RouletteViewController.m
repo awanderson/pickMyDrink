@@ -38,23 +38,14 @@
 }
 
 -(void)displayDrink:(Drinks*)drink {
-    [self.drinkLabel setText:drink.name];
+    [drinkName setTitle:drink.name forState:UIControlStateNormal];
 }
 
 - (IBAction)respin:(id)sender {
     [self displayDrink:[manager generateDrink]];
 }
 
-- (IBAction)resetQuestions:(id)sender {
-    UIStoryboard *storyboard = [self storyboard];
-    QuestionaireViewController *qvc = [storyboard instantiateViewControllerWithIdentifier:@"QuestionaireViewController"];
-    [self presentViewController:qvc animated:YES completion:Nil];
-}
-
 - (IBAction)home:(id)sender {
-    UIStoryboard *storyboard = [self storyboard];
-    MainViewController *mvc = [storyboard instantiateViewControllerWithIdentifier:@"MainViewController"];
-    [self presentViewController:mvc animated:YES completion:nil
-     ];
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 @end
