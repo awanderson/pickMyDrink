@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 #import "DrinkCell.h"
+#import "QuestionManager.h"
+#import "DrinkDetailViewController.h"
 
 @interface ListViewController : UIViewController
 

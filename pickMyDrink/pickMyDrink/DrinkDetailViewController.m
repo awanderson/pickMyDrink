@@ -29,6 +29,34 @@
 	QuestionManager *manager = [QuestionManager questionManager];
     Drinks *drink = [manager getCurrentDrink];
     [drinkName setText:drink.name];
+    //makes bullet points
+    NSArray *ingredientsArr = [drink.ingredients componentsSeparatedByString:@";"];
+
+    NSMutableString *ingredients = [@"" mutableCopy];
+    NSInteger ingredientCount = 0;
+    for(NSString *ingredient in ingredientsArr) {
+        if(ingredientCount != 0) {
+            [ingredients appendString:@"\n"];
+        }
+        [ingredients appendString:@"\u2022 "];
+        [ingredients appendString:ingredient];
+        ingredientCount++;
+    }
+    [ingredientLabel setText:ingredients ];
+    
+    NSArray *directionsArr = [drink.directions componentsSeparatedByString:@";"];
+    NSMutableString *directions = [@"" mutableCopy];
+    NSInteger directionCount = 0;
+    for(NSString *direction in directionsArr) {
+        if(directionCount != 0) {
+            [directions appendString:@"\n"];
+            
+        }
+        [directions appendString:@"\u2022 "];
+        [directions appendString:direction];
+        directionCount++;
+    }
+    [directionLabel setText:directions];
 }
 
 - (void)didReceiveMemoryWarning

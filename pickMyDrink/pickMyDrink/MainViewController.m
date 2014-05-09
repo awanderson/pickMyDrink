@@ -36,4 +36,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)randomButton:(id)sender {
+    [self.manager resetQuestionManager];
+    UIStoryboard *storyboard = [self storyboard];
+    RouletteViewController *rvc = [storyboard instantiateViewControllerWithIdentifier:@"RouletteViewController"];
+    [self.navigationController pushViewController:rvc animated:YES];
+    
+}
 @end

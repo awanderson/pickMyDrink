@@ -18,8 +18,10 @@
 		704CC79418CCF6420071C0AF /* RouletteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 704CC79318CCF6420071C0AF /* RouletteViewController.m */; };
 		7080EF3318EB4B150099FAD7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7080EF3218EB4B150099FAD7 /* CoreData.framework */; };
 		7080EF3618EB4E050099FAD7 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7080EF3418EB4E050099FAD7 /* Model.xcdatamodeld */; };
-		7080EF3918EB4F340099FAD7 /* Drinks.m in Sources */ = {isa = PBXBuildFile; fileRef = 7080EF3818EB4F340099FAD7 /* Drinks.m */; };
 		7080EF3C18EB51D70099FAD7 /* DrinkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7080EF3B18EB51D70099FAD7 /* DrinkCell.m */; };
+		709873E8191D3E8600111B95 /* Drinks.m in Sources */ = {isa = PBXBuildFile; fileRef = 709873E7191D3E8600111B95 /* Drinks.m */; };
+		709873EB191D3E8600111B95 /* Challenges.m in Sources */ = {isa = PBXBuildFile; fileRef = 709873EA191D3E8600111B95 /* Challenges.m */; };
+		709873ED191D3ED100111B95 /* Challenges.json in Resources */ = {isa = PBXBuildFile; fileRef = 709873EC191D3ED100111B95 /* Challenges.json */; };
 		70F129C0191C373100423666 /* DrinkDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F129BF191C373100423666 /* DrinkDetailViewController.m */; };
 		70F7176918EDE8FD0033B64F /* Drinks.json in Resources */ = {isa = PBXBuildFile; fileRef = 70F7176818EDE8FD0033B64F /* Drinks.json */; };
 		D4361CBA18CCE59900D77151 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4361CB918CCE59900D77151 /* Foundation.framework */; };
@@ -69,10 +71,13 @@
 		704CC79318CCF6420071C0AF /* RouletteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouletteViewController.m; sourceTree = "<group>"; };
 		7080EF3218EB4B150099FAD7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		7080EF3518EB4E050099FAD7 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		7080EF3718EB4F340099FAD7 /* Drinks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drinks.h; sourceTree = "<group>"; };
-		7080EF3818EB4F340099FAD7 /* Drinks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Drinks.m; sourceTree = "<group>"; };
 		7080EF3A18EB51D70099FAD7 /* DrinkCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrinkCell.h; sourceTree = "<group>"; };
 		7080EF3B18EB51D70099FAD7 /* DrinkCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrinkCell.m; sourceTree = "<group>"; };
+		709873E6191D3E8600111B95 /* Drinks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Drinks.h; path = ../Drinks.h; sourceTree = "<group>"; };
+		709873E7191D3E8600111B95 /* Drinks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Drinks.m; path = ../Drinks.m; sourceTree = "<group>"; };
+		709873E9191D3E8600111B95 /* Challenges.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Challenges.h; path = ../Challenges.h; sourceTree = "<group>"; };
+		709873EA191D3E8600111B95 /* Challenges.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Challenges.m; path = ../Challenges.m; sourceTree = "<group>"; };
+		709873EC191D3ED100111B95 /* Challenges.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Challenges.json; sourceTree = "<group>"; };
 		70F129BE191C373100423666 /* DrinkDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrinkDetailViewController.h; sourceTree = "<group>"; };
 		70F129BF191C373100423666 /* DrinkDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrinkDetailViewController.m; sourceTree = "<group>"; };
 		70F7176818EDE8FD0033B64F /* Drinks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Drinks.json; sourceTree = "<group>"; };
@@ -127,6 +132,7 @@
 		D4361CAD18CCE59800D77151 = {
 			isa = PBXGroup;
 			children = (
+				709873EC191D3ED100111B95 /* Challenges.json */,
 				701C7D2018F7295E001DC940 /* Questions.json */,
 				70F7176818EDE8FD0033B64F /* Drinks.json */,
 				D4361CBF18CCE59900D77151 /* pickMyDrink */,
@@ -160,6 +166,10 @@
 		D4361CBF18CCE59900D77151 /* pickMyDrink */ = {
 			isa = PBXGroup;
 			children = (
+				709873E7191D3E8600111B95 /* Drinks.m */,
+				709873E6191D3E8600111B95 /* Drinks.h */,
+				709873E9191D3E8600111B95 /* Challenges.h */,
+				709873EA191D3E8600111B95 /* Challenges.m */,
 				701C7D2E18F73496001DC940 /* NSMutableArray+Shuffling.h */,
 				701C7D2F18F73496001DC940 /* NSMutableArray+Shuffling.m */,
 				D4361CC818CCE59900D77151 /* AppDelegate.h */,
@@ -167,8 +177,6 @@
 				7080EF3418EB4E050099FAD7 /* Model.xcdatamodeld */,
 				70176C1D18FC7F3800B03ED0 /* Questions.h */,
 				70176C1E18FC7F3800B03ED0 /* Questions.m */,
-				7080EF3718EB4F340099FAD7 /* Drinks.h */,
-				7080EF3818EB4F340099FAD7 /* Drinks.m */,
 				D4361CCB18CCE59900D77151 /* Main.storyboard */,
 				7080EF3A18EB51D70099FAD7 /* DrinkCell.h */,
 				7080EF3B18EB51D70099FAD7 /* DrinkCell.m */,
@@ -302,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				701C7D2118F7295E001DC940 /* Questions.json in Resources */,
+				709873ED191D3ED100111B95 /* Challenges.json in Resources */,
 				D4361CD218CCE59900D77151 /* Images.xcassets in Resources */,
 				D4361CC418CCE59900D77151 /* InfoPlist.strings in Resources */,
 				70F7176918EDE8FD0033B64F /* Drinks.json in Resources */,
@@ -334,11 +343,12 @@
 				D4361CC618CCE59900D77151 /* main.m in Sources */,
 				70176C1F18FC7F3800B03ED0 /* Questions.m in Sources */,
 				704CC78818CCF6010071C0AF /* MainViewController.m in Sources */,
+				709873EB191D3E8600111B95 /* Challenges.m in Sources */,
 				7080EF3618EB4E050099FAD7 /* Model.xcdatamodeld in Sources */,
 				701C7D2A18F72D2B001DC940 /* QuestionManager.m in Sources */,
-				7080EF3918EB4F340099FAD7 /* Drinks.m in Sources */,
 				704CC79118CCF62C0071C0AF /* ChallengeViewController.m in Sources */,
 				7080EF3C18EB51D70099FAD7 /* DrinkCell.m in Sources */,
+				709873E8191D3E8600111B95 /* Drinks.m in Sources */,
 				D4361CF018CCEE4A00D77151 /* Data.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

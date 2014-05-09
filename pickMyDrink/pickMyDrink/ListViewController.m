@@ -28,15 +28,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
-    NSManagedObjectContext *context = [appDelegate managedObjectContext];
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Drinks" inManagedObjectContext:context];
-    [fetchRequest setEntity:entity];
-    NSError* error;
-    //returns an array on success
-    self.drinkArr = [context executeFetchRequest:fetchRequest error:&error];
-    NSLog(@"count of arr = %lu", (unsigned long)self.drinkArr.count);
+    
 	
 }
 
@@ -54,19 +46,23 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [self.drinkArr count];
+    QuestionManager *manager = [QuestionManager questionManager];
+    return manager.drinks.count;
     
 }
 
 - (DrinkCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    QuestionManager *manager = [QuestionManager questionManager];
+    
     DrinkCell *cell = [tableView dequeueReusableCellWithIdentifier:@"drinkCell"];
+    
     
     if (cell == nil) {
         cell = [[DrinkCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"drinkCell"];
     }
     
-    Drinks *drink = [self.drinkArr objectAtIndex:indexPath.row];
+    Drinks *drink = [manager.drinks objectAtIndex:indexPath.row];
     
     [cell.labelName setText:drink.name];
     
@@ -76,7 +72,15 @@
 #pragma mark - Tableview Data Source
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    QuestionManager *manager = [QuestionManager questionManager];
+    Drinks *drink = [manager.drinks objectAtIndex:indexPath.row];
+    [manager setCurrentDrink:drink];
+    UIStoryboard *storyboard = [self storyboard];
+    DrinkDetailViewController *ddvc = [storyboard instantiateViewControllerWithIdentifier:@"DrinkDetailViewController"];
+    [self.navigationController pushViewController:ddvc animated:YES];
+    
 }
 
 @end

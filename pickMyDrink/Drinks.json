@@ -1,10 +1,11 @@
- [{ "name": "Light Beer", "pointValue": 3 },
-  { "name": "White Wine", "pointValue": 4 },
-  { "name": "Red Wine", "pointValue": 5 },
-  { "name": "Beer", "pointValue": 6 },
-  { "name": "White Russian", "pointValue": 7 },
-  { "name": "Black Russian", "pointValue" : 8 },
-  { "name": "Coke & Rum", "pointValue":  9 },
-  { "name": "ScrewDriver", "pointValue": 10 },
-  { "name": "Manhattan", "pointValue": 11},
-  { "name": "Vodka on the rocks", "pointValue": 12}]
+ [{ "name": "Light Beer", "pointValue": 3, "ingredients":"Light beer of your choice!", "directions":"Crack open and enjoy!" },
+  { "name": "White Wine", "pointValue": 4 , "ingredients":"White wine of your choice!", "directions":"Pour a full glass and sip slow"},
+  { "name": "Red Wine", "pointValue": 5, "ingredients":"Red wine of your choice!", "directions":"Pour a full glass and sip slow" },
+  { "name": "Beer", "pointValue": 6, "ingredients":"Full body beer of your choice!", "directions":"Crack open and enjoy" },
+  { "name": "White Russian", "pointValue": 7, "ingredients":"vodka;coffee liqueur;cream","directions":"Fill glass with ice;Pour 5 parts vodka into glass;Pour 2 parts of coffee liqueur into glass;Fill glass to brim with cream;Enjoy!"},
+  { "name": "Champagne", "pointValue":7, "ingredients":"champagne","directions":"Fill chilled glass with champagne; Celebrate!"}
+  { "name": "Black Russian", "pointValue" : 8, "ingredients":"vodka;coffee liqueur", "directions":"Fill glass with ice;Pour 5 parts vodka into glass;Pour 2 parts of coffee liqueue into glass;Stir gently and enjoy" },
+  { "name": "Rum & Coke", "pointValue":  9, "ingredients":"cola;white rum;fresh lime juice", "directions":"Fill glass with ice;Pour 12 parts cola into glass;Pour 5 parts white rum into glass;Pour 1 part fresh lime juice into glass;Add lime wedge and enjoy!" },
+  { "name": "ScrewDriver", "pointValue": 10, "ingredients":"vodka;orange juice", "directions":"Fill glass with ice;Pour 5 parts vodka into glass;Pour 10 parts orange juice into glass;Add orange slice and enjoy!"},
+  { "name": "Manhattan", "pointValue": 11, "ingredients":"Canadian whisky;sweet red vermouth;dash angostura bitters;maraschino cherry", "directions":"Pour 5 parts whisky, vermouth, and bitters into mixing glass with ice;stir well;strain into chilled cocktail glass;Add cherry and enjoy!"},
+  { "name": "Vodka on the rocks", "pointValue": 12,"ingredients":"vodka","directions":"Fill glass with ice;Pour vodka into glass;Try to enjoy!"}]

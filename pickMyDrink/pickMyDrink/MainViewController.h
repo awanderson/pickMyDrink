@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "QuestionManager.h"
+#import "RouletteViewController.h"
 
-@interface MainViewController : UIViewController
+@interface MainViewController : UIViewController {
+    
+}
+- (IBAction)randomButton:(id)sender;
 
     @property (nonatomic, retain) QuestionManager *manager;
 //These are all the buttons to switch pages

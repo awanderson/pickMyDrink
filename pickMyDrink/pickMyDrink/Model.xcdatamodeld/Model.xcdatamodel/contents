@@ -3,12 +3,16 @@
     <entity name="Alcohols" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
+    <entity name="Challenges" representedClassName="Challenges" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <entity name="Drinks" representedClassName="Drinks" syncable="YES">
         <attribute name="directions" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="ingredients" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="pointValue" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <relationship name="alcohols" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Alcohols" syncable="YES"/>
+        <relationship name="challenges" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Challenges" syncable="YES"/>
         <relationship name="mixers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Mixers" syncable="YES"/>
     </entity>
     <entity name="Mixers" syncable="YES">
@@ -30,5 +34,6 @@
         <element name="Drinks" positionX="0" positionY="0" width="0" height="0"/>
         <element name="Mixers" positionX="0" positionY="0" width="0" height="0"/>
         <element name="Questions" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Challenges" positionX="0" positionY="0" width="0" height="0"/>
     </elements>
 </model>

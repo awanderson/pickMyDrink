@@ -2,7 +2,7 @@
 //  Drinks.h
 //  pickMyDrink
 //
-//  Created by Alec Anderson on 4/1/14.
+//  Created by Alec Anderson on 5/9/14.
 //  Copyright (c) 2014 Philip Deisinger. All rights reserved.
 //
 
@@ -12,10 +12,13 @@
 
 @interface Drinks : NSManagedObject
 
-@property (nonatomic, retain) NSNumber * pointValue;
+@property (nonatomic, retain) NSString * directions;
+@property (nonatomic, retain) NSString * ingredients;
 @property (nonatomic, retain) NSString * name;
+@property (nonatomic, retain) NSNumber * pointValue;
 @property (nonatomic, retain) NSSet *alcohols;
 @property (nonatomic, retain) NSSet *mixers;
+@property (nonatomic, retain) NSManagedObject *challenges;
 @end
 
 @interface Drinks (CoreDataGeneratedAccessors)

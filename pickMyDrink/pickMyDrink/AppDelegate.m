@@ -157,6 +157,7 @@
     
     [self loadDrinks];
     [self loadQuestions];
+    [self loadChallenges];
     
 }
     
@@ -177,6 +178,8 @@
         
         [drinks setValue:[jsonDrink objectForKey:@"name"] forKey:@"name"];
         [drinks setValue:[jsonDrink objectForKey:@"pointValue"] forKey:@"pointValue"];
+        [drinks setValue:[jsonDrink objectForKey:@"ingredients"] forKey:@"ingredients"];
+        [drinks setValue:[jsonDrink objectForKey:@"directions"] forKey:@"directions"];
         NSError *error;
         if (![context save:&error]) {
             NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
@@ -217,6 +220,24 @@
         
         NSError *error;
         if (![context save:&error]) {
+            NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
+        }
+    }
+}
+
+ - (void)loadChallenges
+{
+    NSError* err = nil;
+    NSString* dataPath = [[NSBundle mainBundle] pathForResource:@"Challenges" ofType:@"json"];
+    NSArray* challenges = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:dataPath] options:kNilOptions error:&err];
+    
+    for(NSDictionary *jsonChallenge in challenges) {
+        NSManagedObjectContext *context = [self managedObjectContext];
+        NSManagedObject *challenge = [NSEntityDescription insertNewObjectForEntityForName:@"Challenges" inManagedObjectContext:context];
+        
+        [challenge setValue:[jsonChallenge objectForKey:@"name"] forKey:@"name"];
+        NSError *error;
+        if(![context save:&error]) {
             NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
         }
     }

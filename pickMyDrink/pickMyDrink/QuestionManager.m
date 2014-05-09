@@ -18,7 +18,7 @@
         if (self.pointValue == 0) {
             // if we run out of filtered drinks, simply put all the drinks back in filtered drink
             if(filteredDrinks.count == 0) {
-                filteredDrinks = self.drinks;
+                filteredDrinks = [self.drinks mutableCopy];
             }
             
         }
@@ -107,7 +107,6 @@
             
             //returns an array on success
             manager.questions = [[context executeFetchRequest:fetchRequest error:&error] mutableCopy];
-            manager.pointValue = 0;
         });
         
         return manager;
@@ -140,8 +139,18 @@
     /*
      * sends the current drink that was selected by generateDrink last
      */
-- (Drinks *)getCurrentDrink {
+    - (Drinks *)getCurrentDrink {
         return currentDrink;
     }
+
+    /*
+     * sets the current drink, used by list
+     */
+    - (void)setCurrentDrink:(Drinks *)drink {
+    
+        currentDrink = drink;
+        
+    }
+
     
 @end

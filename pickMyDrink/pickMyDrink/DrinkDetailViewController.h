@@ -13,8 +13,8 @@
 @interface DrinkDetailViewController : UIViewController {
     
     __weak IBOutlet UILabel *drinkName;
-    __weak IBOutlet UILabel *ingredients;
-    __weak IBOutlet UILabel *directions;
+    __weak IBOutlet UILabel *ingredientLabel;
+    __weak IBOutlet UILabel *directionLabel;
 }
 
 @end

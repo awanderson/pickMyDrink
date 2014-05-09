@@ -29,6 +29,7 @@
     + (id)questionManager;
     - (void) resetQuestionManager;
     - (int) getPoints;
+    - (void)setCurrentDrink:(Drinks *)drink;
     - (Drinks *) getCurrentDrink;
 
 @end
