@@ -1,5 +1,5 @@
-[{ "name": "Drink only hard liquors" },
- {"name": "Drink no hard liquors"},
- {"name": "Drink only dark drinks"},
- {"name": "Drink only light drinks"},
- {"name": "Drink like James Bond"}]
+[{ "name": "Drink only hard liquors", "drinks":"5;7;8;9;10;11"},
+ {"name": "Drink no hard liquors", "drinks":"1;2;3;4;6"},
+ {"name": "Drink only dark drinks", "drinks":"1;3;4;7;8"},
+ {"name": "Drink only light drinks", "drinks":"2;5;6;9;10;11"},
+ {"name": "Drink like James Bond", "drinks":"5;6;7;10"}]

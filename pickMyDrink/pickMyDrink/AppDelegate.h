@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+#import "Drinks.h"
+#import "Challenges.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

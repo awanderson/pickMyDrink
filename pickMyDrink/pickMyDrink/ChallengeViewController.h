@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ChallengeCell.h"
+#import "QuestionManager.h"
+#import "Challenges.h"
 
 @interface ChallengeViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITableView *tableChallenge;
 
 @end

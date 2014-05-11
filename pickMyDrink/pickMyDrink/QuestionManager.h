@@ -11,18 +11,23 @@
 #import "Questions.h"
 #import "NSMutableArray+Shuffling.h"
 #import "AppDelegate.h"
+#import "Challenges.h"
 
 @interface QuestionManager : NSObject {
     
     NSMutableArray *filteredDrinks;
     NSMutableArray *filteredQuestions;
     Drinks *currentDrink;
+    Challenges *currentChallenge;
     
 }
     @property (nonatomic) int pointValue;
     @property (nonatomic, retain) NSMutableArray *questions;
     @property (nonatomic, retain) NSMutableArray *drinks;
-        
+    @property (nonatomic, retain) NSMutableArray *challenges;
+    @property (nonatomic, retain) NSMutableArray *unchallengedDrinks;
+
+
     - (Drinks *) generateDrink;
     - (Questions *) generateQuestion;
     - (void) addPoints:(NSInteger)points;
@@ -31,5 +36,6 @@
     - (int) getPoints;
     - (void)setCurrentDrink:(Drinks *)drink;
     - (Drinks *) getCurrentDrink;
-
+    - (void)setCurrentChallenge:(Challenges *)challenge;
+    - (Challenges *) getCurrentChallenge;
 @end

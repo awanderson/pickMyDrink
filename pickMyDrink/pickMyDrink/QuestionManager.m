@@ -91,6 +91,7 @@
             manager = [[self alloc] init];
             AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
             NSManagedObjectContext *context = [appDelegate managedObjectContext];
+            //get drinks
             NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
             NSEntityDescription *entity = [NSEntityDescription entityForName:@"Drinks" inManagedObjectContext:context];
             [fetchRequest setEntity:entity];
@@ -98,15 +99,25 @@
             
             //returns an array on success
             manager.drinks = [[context executeFetchRequest:fetchRequest error:&error] mutableCopy];
+            manager.unchallengedDrinks = [manager.drinks mutableCopy];
             NSLog(@"count of arr rando = %lu", (unsigned long)manager.drinks.count);
             
-            
+            //get questions
             fetchRequest = [[NSFetchRequest alloc] init];
             entity = [NSEntityDescription entityForName:@"Questions" inManagedObjectContext:context];
             [fetchRequest setEntity:entity];
             
             //returns an array on success
             manager.questions = [[context executeFetchRequest:fetchRequest error:&error] mutableCopy];
+            
+            //get challenges
+            fetchRequest = [[NSFetchRequest alloc] init];
+            entity = [NSEntityDescription entityForName:@"Challenges" inManagedObjectContext:context];
+            [fetchRequest setEntity:entity];
+            
+            //returns an array on success
+            manager.challenges = [[context executeFetchRequest:fetchRequest error:&error] mutableCopy];
+            
         });
         
         return manager;
@@ -150,6 +161,28 @@
     
         currentDrink = drink;
         
+    }
+
+    /*
+     * sets the current challenge
+     */
+    - (void)setCurrentChallenge:(Challenges *)challenge {
+        
+        currentChallenge = challenge;
+        if(challenge != nil && challenge.drinks.count != 0) {
+            self.drinks = [[challenge.drinks array] mutableCopy];
+        } else {
+            self.drinks = self.unchallengedDrinks;
+        }
+        
+    }
+
+    /*
+     * gets the current challenge
+     */
+    - (Challenges *)getCurrentChallenge {
+        
+        return currentChallenge;
     }
 
     

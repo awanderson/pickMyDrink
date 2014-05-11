@@ -27,7 +27,19 @@
 {
     [super viewDidLoad];
     self.manager = [QuestionManager questionManager];
-	// Do any additional setup after loading the view.
+    
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    Challenges *challenge = [self.manager getCurrentChallenge];
+    if(challenge != Nil) {
+        [challengeLabel setText:challenge.name];
+        challengeView.hidden = FALSE;
+    } else {
+        challengeView.hidden = TRUE;
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -42,5 +54,10 @@
     RouletteViewController *rvc = [storyboard instantiateViewControllerWithIdentifier:@"RouletteViewController"];
     [self.navigationController pushViewController:rvc animated:YES];
     
+}
+
+- (IBAction)removeChallengeButton:(id)sender {
+    [self.manager setCurrentChallenge:Nil];
+    challengeView.hidden = TRUE;
 }
 @end

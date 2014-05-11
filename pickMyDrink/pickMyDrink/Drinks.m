@@ -2,7 +2,7 @@
 //  Drinks.m
 //  pickMyDrink
 //
-//  Created by Alec Anderson on 5/9/14.
+//  Created by Alec Anderson on 5/10/14.
 //  Copyright (c) 2014 Philip Deisinger. All rights reserved.
 //
 
@@ -15,8 +15,8 @@
 @dynamic ingredients;
 @dynamic name;
 @dynamic pointValue;
+@dynamic number;
 @dynamic alcohols;
 @dynamic mixers;
-@dynamic challenges;
 
 @end

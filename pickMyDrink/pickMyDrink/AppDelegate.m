@@ -154,7 +154,7 @@
     
 - (void)loadInitialData
 {
-    
+    //need to load drinks first
     [self loadDrinks];
     [self loadQuestions];
     [self loadChallenges];
@@ -180,6 +180,7 @@
         [drinks setValue:[jsonDrink objectForKey:@"pointValue"] forKey:@"pointValue"];
         [drinks setValue:[jsonDrink objectForKey:@"ingredients"] forKey:@"ingredients"];
         [drinks setValue:[jsonDrink objectForKey:@"directions"] forKey:@"directions"];
+        [drinks setValue:[jsonDrink objectForKey:@"number"] forKey:@"number"];
         NSError *error;
         if (![context save:&error]) {
             NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
@@ -202,7 +203,7 @@
                                                       options:kNilOptions
                                                         error:&err];
     
-    NSLog(@"Imported Drinks%@", questions);
+    NSLog(@"Imported Questions%@", questions);
     
     for(NSDictionary *jsonQuestion in questions) {
         NSManagedObjectContext *context = [self managedObjectContext];
@@ -230,12 +231,35 @@
     NSError* err = nil;
     NSString* dataPath = [[NSBundle mainBundle] pathForResource:@"Challenges" ofType:@"json"];
     NSArray* challenges = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:dataPath] options:kNilOptions error:&err];
+    NSLog(@"Imported Challenges%@", challenges);
+    
+    NSManagedObjectContext *context = [self managedObjectContext];
+    //get drinks
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Drinks" inManagedObjectContext:context];
+    [fetchRequest setEntity:entity];
+    NSError* error;
+    //returns an array on success
+    NSMutableArray *drinks = [[context executeFetchRequest:fetchRequest error:&error] mutableCopy];
     
     for(NSDictionary *jsonChallenge in challenges) {
         NSManagedObjectContext *context = [self managedObjectContext];
-        NSManagedObject *challenge = [NSEntityDescription insertNewObjectForEntityForName:@"Challenges" inManagedObjectContext:context];
+        Challenges *challenge = [NSEntityDescription insertNewObjectForEntityForName:@"Challenges" inManagedObjectContext:context];
         
         [challenge setValue:[jsonChallenge objectForKey:@"name"] forKey:@"name"];
+        NSString *drinksString = [jsonChallenge objectForKey:@"drinks"];
+        //find all drinks that are suppose to be in that challenge
+        NSArray *drinksInChallenge = [drinksString componentsSeparatedByString:@";"];
+        for(NSString *numberAsString in drinksInChallenge) {
+            NSInteger number = [numberAsString integerValue];
+            for (Drinks *drink in drinks) {
+                if(number == [drink.number integerValue]) {
+                    NSLog(@"Adding %@ to %@", drink.name, [jsonChallenge objectForKey:@"name"]);
+                    [challenge addDrinksObject:drink];
+                }
+            }
+            
+        }
         NSError *error;
         if(![context save:&error]) {
             NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
