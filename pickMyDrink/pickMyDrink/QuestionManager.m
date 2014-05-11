@@ -34,7 +34,8 @@
                         [filteredDrinks addObject:drink];
                     }
                 }
-            } else if (filteredDrinks.count == 0) {
+            }
+            if (filteredDrinks.count == 0) {
                 //add all drinks minus the ones with the right point value because
                 //the user has already had all of those
                 for(int i = 0; i < self.drinks.count; i++) {
