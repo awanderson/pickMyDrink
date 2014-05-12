@@ -75,6 +75,16 @@
 		D46036D719205D7000E346DE /* Random-2.png in Resources */ = {isa = PBXBuildFile; fileRef = D46036B419205D7000E346DE /* Random-2.png */; };
 		D46036D819205D7000E346DE /* RandomTitle.png in Resources */ = {isa = PBXBuildFile; fileRef = D46036B519205D7000E346DE /* RandomTitle.png */; };
 		D46036D919205D7000E346DE /* Title-1.png in Resources */ = {isa = PBXBuildFile; fileRef = D46036B619205D7000E346DE /* Title-1.png */; };
+		D4EC1CAB1920765D00A57F70 /* BlackR.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EC1CA11920765D00A57F70 /* BlackR.png */; };
+		D4EC1CAC1920765D00A57F70 /* Champagne.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EC1CA21920765D00A57F70 /* Champagne.png */; };
+		D4EC1CAD1920765D00A57F70 /* Manhattan.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EC1CA31920765D00A57F70 /* Manhattan.png */; };
+		D4EC1CAE1920765D00A57F70 /* NormalBeer.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EC1CA41920765D00A57F70 /* NormalBeer.png */; };
+		D4EC1CAF1920765D00A57F70 /* RandC.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EC1CA51920765D00A57F70 /* RandC.png */; };
+		D4EC1CB01920765D00A57F70 /* RedWine.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EC1CA61920765D00A57F70 /* RedWine.png */; };
+		D4EC1CB11920765D00A57F70 /* Screwdriver.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EC1CA71920765D00A57F70 /* Screwdriver.png */; };
+		D4EC1CB21920765D00A57F70 /* Vodka.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EC1CA81920765D00A57F70 /* Vodka.png */; };
+		D4EC1CB31920765D00A57F70 /* WhiteR.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EC1CA91920765D00A57F70 /* WhiteR.png */; };
+		D4EC1CB41920765D00A57F70 /* WhiteWine.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EC1CAA1920765D00A57F70 /* WhiteWine.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -175,6 +185,16 @@
 		D46036B419205D7000E346DE /* Random-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Random-2.png"; path = "../../../Random-2.png"; sourceTree = "<group>"; };
 		D46036B519205D7000E346DE /* RandomTitle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RandomTitle.png; path = ../../../RandomTitle.png; sourceTree = "<group>"; };
 		D46036B619205D7000E346DE /* Title-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Title-1.png"; path = "../../../Title-1.png"; sourceTree = "<group>"; };
+		D4EC1CA11920765D00A57F70 /* BlackR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BlackR.png; path = ../../../BlackR.png; sourceTree = "<group>"; };
+		D4EC1CA21920765D00A57F70 /* Champagne.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Champagne.png; path = ../../../Champagne.png; sourceTree = "<group>"; };
+		D4EC1CA31920765D00A57F70 /* Manhattan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Manhattan.png; path = ../../../Manhattan.png; sourceTree = "<group>"; };
+		D4EC1CA41920765D00A57F70 /* NormalBeer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NormalBeer.png; path = ../../../NormalBeer.png; sourceTree = "<group>"; };
+		D4EC1CA51920765D00A57F70 /* RandC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RandC.png; path = ../../../RandC.png; sourceTree = "<group>"; };
+		D4EC1CA61920765D00A57F70 /* RedWine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RedWine.png; path = ../../../RedWine.png; sourceTree = "<group>"; };
+		D4EC1CA71920765D00A57F70 /* Screwdriver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Screwdriver.png; path = ../../../Screwdriver.png; sourceTree = "<group>"; };
+		D4EC1CA81920765D00A57F70 /* Vodka.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Vodka.png; path = ../../../Vodka.png; sourceTree = "<group>"; };
+		D4EC1CA91920765D00A57F70 /* WhiteR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WhiteR.png; path = ../../../WhiteR.png; sourceTree = "<group>"; };
+		D4EC1CAA1920765D00A57F70 /* WhiteWine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WhiteWine.png; path = ../../../WhiteWine.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +281,16 @@
 				D4361CCF18CCE59900D77151 /* ViewController.m */,
 				D4361CD118CCE59900D77151 /* Images.xcassets */,
 				D460369419205D7000E346DE /* Background-1.png */,
+				D4EC1CA11920765D00A57F70 /* BlackR.png */,
+				D4EC1CA21920765D00A57F70 /* Champagne.png */,
+				D4EC1CA31920765D00A57F70 /* Manhattan.png */,
+				D4EC1CA41920765D00A57F70 /* NormalBeer.png */,
+				D4EC1CA51920765D00A57F70 /* RandC.png */,
+				D4EC1CA61920765D00A57F70 /* RedWine.png */,
+				D4EC1CA71920765D00A57F70 /* Screwdriver.png */,
+				D4EC1CA81920765D00A57F70 /* Vodka.png */,
+				D4EC1CA91920765D00A57F70 /* WhiteR.png */,
+				D4EC1CAA1920765D00A57F70 /* WhiteWine.png */,
 				D460369519205D7000E346DE /* Background-2.png */,
 				D460369619205D7000E346DE /* Background-3.png */,
 				D460369719205D7000E346DE /* Background-4.png */,
@@ -422,18 +452,24 @@
 				D46036B919205D7000E346DE /* Background-3.png in Resources */,
 				D46036C519205D7000E346DE /* List-2.png in Resources */,
 				D46036BF19205D7000E346DE /* Beer2.png in Resources */,
+				D4EC1CB41920765D00A57F70 /* WhiteWine.png in Resources */,
+				D4EC1CB21920765D00A57F70 /* Vodka.png in Resources */,
 				D46036D219205D7000E346DE /* Question7.png in Resources */,
+				D4EC1CAF1920765D00A57F70 /* RandC.png in Resources */,
+				D4EC1CAD1920765D00A57F70 /* Manhattan.png in Resources */,
 				701C7D2118F7295E001DC940 /* Questions.json in Resources */,
 				D46036C319205D7000E346DE /* ChallengeTitle.png in Resources */,
 				D46036D919205D7000E346DE /* Title-1.png in Resources */,
 				D46036CB19205D7000E346DE /* PMDIcon3.png in Resources */,
 				D46036D119205D7000E346DE /* Question4.png in Resources */,
+				D4EC1CAC1920765D00A57F70 /* Champagne.png in Resources */,
 				D46036C419205D7000E346DE /* List-2-Select.png in Resources */,
 				D46036D619205D7000E346DE /* Random-2-Select.png in Resources */,
 				D46036C719205D7000E346DE /* PMD2.png in Resources */,
 				709873ED191D3ED100111B95 /* Challenges.json in Resources */,
 				D46036B819205D7000E346DE /* Background-2.png in Resources */,
 				D4361CD218CCE59900D77151 /* Images.xcassets in Resources */,
+				D4EC1CB11920765D00A57F70 /* Screwdriver.png in Resources */,
 				D46036D019205D7000E346DE /* Question3.png in Resources */,
 				D46036D519205D7000E346DE /* Quetion5.png in Resources */,
 				D46036CC19205D7000E346DE /* PMDIconLarge2.png in Resources */,
@@ -446,7 +482,10 @@
 				D46036D419205D7000E346DE /* Questionnaire-2.png in Resources */,
 				D46036C219205D7000E346DE /* Challenge-2.png in Resources */,
 				D46036C819205D7000E346DE /* PMD3.png in Resources */,
+				D4EC1CB31920765D00A57F70 /* WhiteR.png in Resources */,
+				D4EC1CB01920765D00A57F70 /* RedWine.png in Resources */,
 				D4361CCD18CCE59900D77151 /* Main.storyboard in Resources */,
+				D4EC1CAE1920765D00A57F70 /* NormalBeer.png in Resources */,
 				D46036BA19205D7000E346DE /* Background-4.png in Resources */,
 				D46036BD19205D7000E346DE /* Background-Full-3.png in Resources */,
 				D46036D819205D7000E346DE /* RandomTitle.png in Resources */,
@@ -455,6 +494,7 @@
 				D46036C019205D7000E346DE /* Beer3.png in Resources */,
 				D46036CF19205D7000E346DE /* Question2.png in Resources */,
 				D46036CA19205D7000E346DE /* PMDIcon2.png in Resources */,
+				D4EC1CAB1920765D00A57F70 /* BlackR.png in Resources */,
 				D46036C919205D7000E346DE /* PMDIcon1.png in Resources */,
 				D46036B719205D7000E346DE /* Background-1.png in Resources */,
 				D46036CE19205D7000E346DE /* Question1.png in Resources */,
