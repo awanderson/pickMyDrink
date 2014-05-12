@@ -304,8 +304,8 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="B6h-nY-nIW">
                                 <rect key="frame" x="-15" y="0.0" width="335" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="sectionIndexTrackingBackgroundColor" red="0.31818747559999999" green="1" blue="0.71423384130000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.31818747559999999" green="1" blue="0.71423384130000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexTrackingBackgroundColor" red="0.22365446280000001" green="1" blue="0.70010340670000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" restorationIdentifier="challengeCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="challengeCell" rowHeight="70" id="MVB-H6-gyY" customClass="ChallengeCell">
                                         <rect key="frame" x="0.0" y="86" width="335" height="70"/>
@@ -322,6 +322,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.22365446280000001" green="1" blue="0.70010340670000004" alpha="1" colorSpace="calibratedRGB"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.31818747559999999" green="1" blue="0.71423384130000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
@@ -335,7 +336,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.22365446280000001" green="1" blue="0.70010340670000004" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="UPj-zc-vRC"/>
                     <connections>
@@ -361,7 +362,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="biQ-UO-F3Z">
                                 <rect key="frame" x="-14" y="0.0" width="334" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.31818747559999999" green="1" blue="0.71423384130000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexTrackingBackgroundColor" red="0.31818747559999999" green="1" blue="0.71423384130000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" restorationIdentifier="drinkCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="drinkCell" rowHeight="70" id="1r8-3y-WZ6" customClass="DrinkCell">
@@ -374,11 +375,13 @@
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWE-EG-e5c">
                                                     <rect key="frame" x="33" y="25" width="268" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.22365446280000001" green="1" blue="0.70010340670000004" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.22365446280000001" green="1" blue="0.70010340670000004" alpha="1" colorSpace="calibratedRGB"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.31818747559999999" green="1" blue="0.71423384130000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
@@ -392,7 +395,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.22365446280000001" green="1" blue="0.70010340670000004" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="KA4-Y0-L5a"/>
                     <connections>
