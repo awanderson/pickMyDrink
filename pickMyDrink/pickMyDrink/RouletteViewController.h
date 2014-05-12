@@ -16,6 +16,7 @@
 @interface RouletteViewController : UIViewController {
     QuestionManager *manager;
     __weak IBOutlet UIButton *drinkName;
+    UIImageView *box;
 }
 
 

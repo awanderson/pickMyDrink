@@ -21,7 +21,6 @@
 		7080EF3C18EB51D70099FAD7 /* DrinkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7080EF3B18EB51D70099FAD7 /* DrinkCell.m */; };
 		709873ED191D3ED100111B95 /* Challenges.json in Resources */ = {isa = PBXBuildFile; fileRef = 709873EC191D3ED100111B95 /* Challenges.json */; };
 		70C327B8191F03AA00F80076 /* ChallengeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C327B7191F03AA00F80076 /* ChallengeCell.m */; };
-		70C327CA191F114500F80076 /* Drinks.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C327C9191F114500F80076 /* Drinks.m */; };
 		70C327D0191F154A00F80076 /* Challenges.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C327CF191F154A00F80076 /* Challenges.m */; };
 		70F129C0191C373100423666 /* DrinkDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F129BF191C373100423666 /* DrinkDetailViewController.m */; };
 		70F7176918EDE8FD0033B64F /* Drinks.json in Resources */ = {isa = PBXBuildFile; fileRef = 70F7176818EDE8FD0033B64F /* Drinks.json */; };
@@ -85,6 +84,7 @@
 		D4EC1CB21920765D00A57F70 /* Vodka.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EC1CA81920765D00A57F70 /* Vodka.png */; };
 		D4EC1CB31920765D00A57F70 /* WhiteR.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EC1CA91920765D00A57F70 /* WhiteR.png */; };
 		D4EC1CB41920765D00A57F70 /* WhiteWine.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EC1CAA1920765D00A57F70 /* WhiteWine.png */; };
+		D4EC1CB719207AD200A57F70 /* Drinks.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EC1CB619207AD200A57F70 /* Drinks.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,8 +122,6 @@
 		709873EC191D3ED100111B95 /* Challenges.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Challenges.json; sourceTree = "<group>"; };
 		70C327B6191F03AA00F80076 /* ChallengeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChallengeCell.h; sourceTree = "<group>"; };
 		70C327B7191F03AA00F80076 /* ChallengeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChallengeCell.m; sourceTree = "<group>"; };
-		70C327C8191F114500F80076 /* Drinks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drinks.h; sourceTree = "<group>"; };
-		70C327C9191F114500F80076 /* Drinks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Drinks.m; sourceTree = "<group>"; };
 		70C327CE191F154A00F80076 /* Challenges.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Challenges.h; sourceTree = "<group>"; };
 		70C327CF191F154A00F80076 /* Challenges.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Challenges.m; sourceTree = "<group>"; };
 		70F129BE191C373100423666 /* DrinkDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrinkDetailViewController.h; sourceTree = "<group>"; };
@@ -195,6 +193,8 @@
 		D4EC1CA81920765D00A57F70 /* Vodka.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Vodka.png; path = ../../../Vodka.png; sourceTree = "<group>"; };
 		D4EC1CA91920765D00A57F70 /* WhiteR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WhiteR.png; path = ../../../WhiteR.png; sourceTree = "<group>"; };
 		D4EC1CAA1920765D00A57F70 /* WhiteWine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WhiteWine.png; path = ../../../WhiteWine.png; sourceTree = "<group>"; };
+		D4EC1CB519207AD200A57F70 /* Drinks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drinks.h; sourceTree = "<group>"; };
+		D4EC1CB619207AD200A57F70 /* Drinks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Drinks.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,11 +265,11 @@
 				701C7D2F18F73496001DC940 /* NSMutableArray+Shuffling.m */,
 				D4361CC818CCE59900D77151 /* AppDelegate.h */,
 				D4361CC918CCE59900D77151 /* AppDelegate.m */,
+				D4EC1CB519207AD200A57F70 /* Drinks.h */,
+				D4EC1CB619207AD200A57F70 /* Drinks.m */,
 				7080EF3418EB4E050099FAD7 /* Model.xcdatamodeld */,
 				70C327CE191F154A00F80076 /* Challenges.h */,
 				70C327CF191F154A00F80076 /* Challenges.m */,
-				70C327C8191F114500F80076 /* Drinks.h */,
-				70C327C9191F114500F80076 /* Drinks.m */,
 				70176C1D18FC7F3800B03ED0 /* Questions.h */,
 				70176C1E18FC7F3800B03ED0 /* Questions.m */,
 				D4361CCB18CCE59900D77151 /* Main.storyboard */,
@@ -530,11 +530,11 @@
 				70176C1F18FC7F3800B03ED0 /* Questions.m in Sources */,
 				704CC78818CCF6010071C0AF /* MainViewController.m in Sources */,
 				7080EF3618EB4E050099FAD7 /* Model.xcdatamodeld in Sources */,
+				D4EC1CB719207AD200A57F70 /* Drinks.m in Sources */,
 				701C7D2A18F72D2B001DC940 /* QuestionManager.m in Sources */,
 				704CC79118CCF62C0071C0AF /* ChallengeViewController.m in Sources */,
 				7080EF3C18EB51D70099FAD7 /* DrinkCell.m in Sources */,
 				70C327D0191F154A00F80076 /* Challenges.m in Sources */,
-				70C327CA191F114500F80076 /* Drinks.m in Sources */,
 				D4361CF018CCEE4A00D77151 /* Data.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
