@@ -181,6 +181,7 @@
         [drinks setValue:[jsonDrink objectForKey:@"ingredients"] forKey:@"ingredients"];
         [drinks setValue:[jsonDrink objectForKey:@"directions"] forKey:@"directions"];
         [drinks setValue:[jsonDrink objectForKey:@"number"] forKey:@"number"];
+        [drinks setValue:[jsonDrink objectForKey:@"imageName"] forKey:@"imageName"];
         NSError *error;
         if (![context save:&error]) {
             NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
